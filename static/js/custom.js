@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const number = match[1];
         const subject = match[2];
-        const mdPath = `/markdowns/sujet_${number}.md`;
+        const mdPath = MARKDOWN_BASE_URL + `sujet_${number}.md`;
 
         const option = document.createElement("option");
         option.value = mdPath;
